@@ -1,0 +1,15 @@
+/home/hikki/Пакет Разработчик/Знакомство с ЯП ДЗ/lesson1/task3/bin/Debug/net6.0/task3
+/home/hikki/Пакет Разработчик/Знакомство с ЯП ДЗ/lesson1/task3/bin/Debug/net6.0/task3.deps.json
+/home/hikki/Пакет Разработчик/Знакомство с ЯП ДЗ/lesson1/task3/bin/Debug/net6.0/task3.runtimeconfig.json
+/home/hikki/Пакет Разработчик/Знакомство с ЯП ДЗ/lesson1/task3/bin/Debug/net6.0/task3.dll
+/home/hikki/Пакет Разработчик/Знакомство с ЯП ДЗ/lesson1/task3/bin/Debug/net6.0/ref/task3.dll
+/home/hikki/Пакет Разработчик/Знакомство с ЯП ДЗ/lesson1/task3/bin/Debug/net6.0/task3.pdb
+/home/hikki/Пакет Разработчик/Знакомство с ЯП ДЗ/lesson1/task3/obj/Debug/net6.0/task3.csproj.AssemblyReference.cache
+/home/hikki/Пакет Разработчик/Знакомство с ЯП ДЗ/lesson1/task3/obj/Debug/net6.0/task3.GeneratedMSBuildEditorConfig.editorconfig
+/home/hikki/Пакет Разработчик/Знакомство с ЯП ДЗ/lesson1/task3/obj/Debug/net6.0/task3.AssemblyInfoInputs.cache
+/home/hikki/Пакет Разработчик/Знакомство с ЯП ДЗ/lesson1/task3/obj/Debug/net6.0/task3.AssemblyInfo.cs
+/home/hikki/Пакет Разработчик/Знакомство с ЯП ДЗ/lesson1/task3/obj/Debug/net6.0/task3.csproj.CoreCompileInputs.cache
+/home/hikki/Пакет Разработчик/Знакомство с ЯП ДЗ/lesson1/task3/obj/Debug/net6.0/task3.dll
+/home/hikki/Пакет Разработчик/Знакомство с ЯП ДЗ/lesson1/task3/obj/Debug/net6.0/ref/task3.dll
+/home/hikki/Пакет Разработчик/Знакомство с ЯП ДЗ/lesson1/task3/obj/Debug/net6.0/task3.pdb
+/home/hikki/Пакет Разработчик/Знакомство с ЯП ДЗ/lesson1/task3/obj/Debug/net6.0/task3.genruntimeconfig.cache

@@ -51,5 +51,3 @@ while (rowStart <= rowEnd && colStart <= colEnd)    //  Инициализаци
 }
 PrintArray print = new PrintArray();
 print.PrintTwoDimArray(array);
-
-

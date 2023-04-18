@@ -8,54 +8,44 @@ selectOption(menu());   //  Запуск программы.
 
 static int menu()   //  Метод, выводящий меню в консоль.
 {
-    Console.WriteLine($"Ввести или сгенерировать число?");  //  Пункты меню.
-    Console.WriteLine();
+    Console.WriteLine($"\nВвести или сгенерировать число?\n");  //  Пункты меню.
     Console.WriteLine($"1 - Ввести");
     Console.WriteLine($"2 - Сгенерировать");
-    Console.WriteLine($"0 - Выход");
-    Console.WriteLine();
+    Console.WriteLine($"0 - Выход\n");
     int key = Convert.ToInt32(Console.ReadLine());  //  Запрос ввода от пользователя.
     return key;
 }
 
 static void selectOption(int key)   //  Метод, обрабатывающий ввод от пользователя.
 {
-    Console.WriteLine();
-    Console.WriteLine($"Ввeдена команда: {key}");   //  Информационное сообщение.
-    Console.WriteLine();
+    Console.WriteLine($"\nВвeдена команда: {key}");   //  Информационное сообщение.
     int number; //  Объявление переменной, в которую будет записано число.
     while (true)    //  Запуск бесконечного цикла.
     {   //  Можно расписать через while != 0, чтобы запускать программу, пока не будет введен 0.
         if (key == 1)   //  Введена команда 1.
         {
             number = userInput();   //  Вызов метода ввода числа от пользователя.
-            Console.WriteLine($"Натуральные числа от {number} до 1: "); //  Вывод результата.
-            Console.WriteLine();
+            Console.WriteLine($"\nНатуральные числа от {number} до 1: \n"); //  Вывод результата.
             outputNumbers(number);  //  Вызов метода рекурсивного, находящего числа, в заданном диапазоне.
-            Console.WriteLine();
-            Console.WriteLine();
+            Console.WriteLine("\n");
             break;  //  Завершение программы.
         }
         else if (key == 2)  //  Введена команда 2.
         {
             number = randomNumber();    // Вызов метода, генерирующиего случайное число.
-            Console.WriteLine($"Натуральные числа от {number} до 1: "); //  Вывод результата.
-            Console.WriteLine();
+            Console.WriteLine($"\nНатуральные числа от {number} до 1: \n"); //  Вывод результата.
             outputNumbers(number);  //  Вызов рекурсивного метода, находящего числа, в заданном диапазоне.
-            Console.WriteLine();
-            Console.WriteLine();
+            Console.WriteLine("\n");
             break;  //  Завершение программы.
         }
         else if (key == 0)  //  Введена команда 0.
         {
-            Console.WriteLine($"Заершение программы..");    // Информационное сообщение.
-            Console.WriteLine();
+            Console.WriteLine($"\nЗаершение программы..\n");    // Информационное сообщение.
             break;  //  Завершение программы.
         }
         else    //  Ввод неизвестной команды.
         {
-            Console.WriteLine($"Ошибка! Введена неизвестная команда!"); //  Вывод ошибки.
-            Console.WriteLine();
+            Console.WriteLine($"\nОшибка! Введена неизвестная команда!\n"); //  Вывод ошибки.
             break;
         }
     }
@@ -63,44 +53,20 @@ static void selectOption(int key)   //  Метод, обрабатывающий
 
 static int userInput()  //  Метод ввода числа от пользователя.
 {
-    Console.WriteLine($"Введите число: ");  //  Запрос ввода числа.
+    Console.WriteLine($"\nВведите число: \n");  //  Запрос ввода числа.
     int number = Convert.ToInt32(Console.ReadLine());
-    if (isPositive(number) == false)    //  Проверка, введенного числа на отрицательное значение.
-    {
-        Console.WriteLine();
-        Console.WriteLine($"Ошибка! Введенное число меньше 0!");
-        Console.WriteLine($"Получение положительного числа!");
-        Console.WriteLine();
-        Console.WriteLine($"Новое число: {number * -1}");   //  Получение положительного числа.
-        Console.WriteLine();
-        return number * -1;
-    }
-    else
-    {
-        Console.WriteLine();
-        Console.WriteLine($"Введенное чило: {number}"); //  Информационное сообщение.
-        Console.WriteLine();
-        return number;
-    }
-}
-
-static bool isPositive(int number)  //  Метод, проверяющий введенное число на отрицательное значение.
-{
     if (number < 0)
     {
-        return false;
+        number *= -1;
     }
-    else
-    {
-        return true;
-    }
+    Console.WriteLine($"\nВведенное чило: {number}\n"); //  Информационное сообщение.
+    return number;
 }
 
 static int randomNumber()   //  Метод, генерирующий случайное число.
 {
     int number = Convert.ToInt32(new Random().Next(1, 50)); //  Генератор случайного числа, в заданном диапазоне.
-    Console.WriteLine($"Сгенерированное число: {number}");  //  Информационное сообщение.
-    Console.WriteLine();
+    Console.WriteLine($"\nСгенерированное число: {number}");  //  Информационное сообщение.
     return number;
 }
 
